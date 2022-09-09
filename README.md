@@ -10,6 +10,7 @@ For MERN Web Development bootcamp
 
 ## Idea
 Small app receives an Http request from the client and returns list of orders and total price for all the orders as JSON response.
+
 **Example**
 ```
 {
