@@ -59,7 +59,7 @@ Small app receives an Http request from the client and returns list of orders an
 - JSON response should match above schema as in the example.
 
 ## Orders File Description
-Orders.txt file contains list of orders, each one belong to a customer, but to read the data from the file correctly you need to understand the dataset schema:
+`Orders.txt` file contains list of orders, each one belong to a customer, but to read the data from the file correctly you need to understand the dataset schema:
 - Empty line indicate the end of one order and starting the other.
 - Order Block Details:
     - First line contains customer name.
@@ -68,13 +68,13 @@ Orders.txt file contains list of orders, each one belong to a customer, but to r
     - Each item line contains (name, count, price, total price)
     - Last line contains (Total price for the order, discount percentage, Total price after the discount calculated).
 
-Line 1: Customer Name
-Line 2: latitude longitude
-Line 3: itemName count price totalPrice
-Line 4: itemName count price totalPrice
-Line 5: itemName count price totalPrice
-Line N - 1: itemName count price totalPrice
-Line N: TotalPrice discount TotalPriceAfterDiscount
+- `Line 1:` Customer Name.
+- `Line 2:` latitude longitude
+- `Line 3:` itemName count price totalPrice
+- `Line 4:` itemName count price totalPrice
+- `Line 5:` itemName count price totalPrice
+- `Line N - 1:` itemName count price totalPrice
+- `Line N:` TotalPrice discount TotalPriceAfterDiscount
 
 
 ## Hints
