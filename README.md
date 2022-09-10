@@ -29,7 +29,9 @@ Small app receives an Http request from the client and returns list of orders an
                     total:1.5
                 }
             ],
-            total:1.5
+            total:1.5,
+            discount:0,
+            totalAfterDiscount:1.5
         },
         {
             customer:"Adel Ahmed",
@@ -45,7 +47,9 @@ Small app receives an Http request from the client and returns list of orders an
                     total:6
                 }
             ],
-            total:6
+            total:6,
+            discount:20,
+            totalAfterDiscount:4.8
         }
     ],
     total:7.5
@@ -60,7 +64,7 @@ Small app receives an Http request from the client and returns list of orders an
 
 ## Orders File Description
 `Orders.txt` file contains list of orders, each one belong to a customer, but to read the data from the file correctly you need to understand the dataset schema:
-- Empty line indicate the end of one order and starting the other.
+- comma character indicates the end of one order and starting the other.
 - Order Block Details:
     - First line contains customer name.
     - Second line contains latitude and longitude as the address of the customer on the map.
@@ -78,9 +82,12 @@ Small app receives an Http request from the client and returns list of orders an
 
 
 ## Hints
-- Empty line seperate orders.
+- Comma seperate orders.
 - Use space to split item details.
 - Discount is percentage and not a constant value.
+- Use `fs` to read data from orders text file.
+- You may need to install `express.js` via npm.
+
 
 
 
