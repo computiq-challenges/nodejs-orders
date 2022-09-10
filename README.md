@@ -74,10 +74,10 @@ Small app receives an Http request from the client and returns list of orders an
 
 - `Line 1:` Customer Name.
 - `Line 2:` latitude longitude
-- `Line 3:` itemName count price totalPrice
+- `Line 3:` ItemsCount
 - `Line 4:` itemName count price totalPrice
 - `Line 5:` itemName count price totalPrice
-- `Line N - 1:` itemName count price totalPrice
+- `Line 6:` itemName count price totalPrice
 - `Line N:` TotalPrice discount TotalPriceAfterDiscount
 
 
