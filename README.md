@@ -52,7 +52,7 @@ Small app receives an Http request from the client and returns list of orders an
             totalAfterDiscount:4.8
         }
     ],
-    total:7.5
+    total:6.3
 }
 ```
 ## Requirements
